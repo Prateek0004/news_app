@@ -205,6 +205,15 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     'Technology'
   ];
 
+
+  @override
+  void initState() {
+    super.initState();
+    setState(() {
+      categoryName = 'General';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.sizeOf(context).width * 1;
